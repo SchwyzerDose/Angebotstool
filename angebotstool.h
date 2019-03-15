@@ -3,6 +3,16 @@
 
 #include <QMainWindow>
 
+
+#include<QTextEdit>
+#include<QLineEdit>
+
+#include<QVBoxLayout>
+#include <QDebug>
+#include <QWidget>
+#include <QLabel>
+#include <QPushButton>
+
 namespace Ui {
 class Angebotstool;
 }
