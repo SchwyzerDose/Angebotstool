@@ -5,7 +5,8 @@ Angebotstool::Angebotstool(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::Angebotstool)
 {
-    ui->setupUi(this);
+    ui->setupUi(this); //Oben
+
 }
 
 Angebotstool::~Angebotstool()
