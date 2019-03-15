@@ -13,3 +13,4 @@ Angebotstool::~Angebotstool()
 {
     delete ui;
 }
+//Hallo
