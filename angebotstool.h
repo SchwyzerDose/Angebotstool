@@ -27,6 +27,14 @@ public:
 
 private:
     Ui::Angebotstool *ui;
+    int counter=0;
+    QLabel *text;
+    QPushButton *neuerknopf;
+    QPushButton *neuerknopf2;
+
+
+private slots:
+    void abc(void);
 };
 
 #endif // ANGEBOTSTOOL_H

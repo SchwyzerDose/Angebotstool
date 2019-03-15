@@ -8,17 +8,19 @@ Angebotstool::Angebotstool(QWidget *parent) :
     ui->setupUi(this); //Oben
 
     ui->setupUi(this);
-    QLabel *text = new QLabel(this);
+    text = new QLabel(this);
     text->setText("0");
     text->setGeometry(200,80,100,20);
 
-    QPushButton *neuerknopf =new QPushButton ("Quit", this);
+    neuerknopf =new QPushButton ("Quit", this);
     neuerknopf->setGeometry(100,100,100,50);
     connect(neuerknopf, SIGNAL(clicked()), qApp, SLOT(quit()));
 
-    QPushButton *neuerknopf2 =new QPushButton ("+2", this);
+   neuerknopf2 =new QPushButton ("+1", this);
     neuerknopf2->setGeometry(200,100,100,50);
-    connect(neuerknopf2, SIGNAL(clicked()), qApp, SLOT(abc()));
+    connect(neuerknopf2, SIGNAL(clicked()), this, SLOT(abc()));
+
+
 }
 
 Angebotstool::~Angebotstool()
@@ -26,3 +28,13 @@ Angebotstool::~Angebotstool()
     delete ui;
 }
 //Hallo
+ void Angebotstool::abc(void)
+ {
+
+counter++;
+
+QString numberText = QString("%1").arg(counter);
+        text->setText(numberText);
+        qDebug() << counter << endl;
+
+ }
